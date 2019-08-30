@@ -1,0 +1,27 @@
+.button {
+    padding: 10px 15px;
+    background-color: $theme-color-2;
+    text-transform: uppercase;
+    border: none;
+    color: #fff;
+    font-family: $decor-font-family;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.25s;
+    text-decoration: none;
+    cursor: pointer;
+    &:hover {
+        background-color: $theme-color-1;
+        color: #fff;
+        text-decoration: none;
+        transition: background-color 0.25s;
+    }
+}
+
+.button_size_large {
+    padding: 10px 15px;
+}
+
+.button_size_small {
+    padding: 0 8px;
+}

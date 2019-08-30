@@ -1,0 +1,28 @@
+.main-menu {
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  li {
+    margin-right: 22px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  a {
+    color: $theme-color-3;
+    font-size: 14px;
+    font-weight: 300;
+    transition: color 0.25s;
+    white-space: nowrap;
+    text-decoration: none;
+    &:hover {
+      text-decoration: none;
+      color: $theme-color-2;
+      transition: color 0.25s;
+    }
+  }
+}

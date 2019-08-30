@@ -1,0 +1,33 @@
+.link-item {
+    display: block;
+    height: 100%;
+    position: relative;
+    &:hover {
+        .link-item__title-wrapper {
+            background-color: $theme-color-1;
+            transition: background-color 0.25s;
+        }
+    }
+}
+
+.link-item__title-wrapper {
+    width: 100%;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    background-color: $theme-color-2;
+    text-align: center;
+    opacity: 0.9;
+    padding: 15px 7px;
+    transition: background-color 0.25s;
+}
+
+.link-item__title {
+    color: #fff;
+    font-family: $decor-font-family;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1;
+    text-align: center;
+}

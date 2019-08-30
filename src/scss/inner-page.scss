@@ -1,0 +1,20 @@
+.inner-page {
+    padding-top: 45px;
+    border-top: 1px solid $theme-color-2;
+}
+
+.inner-page__title {
+    margin-bottom: 45px;
+    color: $theme-color-1;
+    font-family: $decor-font-family;
+    font-size: 33px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 1px;
+}
+
+@media screen and (max-width: $breakpoint-small) {
+    .inner-page__title {
+        font-size: 25px;
+    }
+}

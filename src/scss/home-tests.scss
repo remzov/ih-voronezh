@@ -1,0 +1,25 @@
+.home-tests {
+    background-color: $theme-color-1;
+    text-align: center;
+    padding: 45px 0;
+}
+
+.home-tests__title {
+    color: #fdc602;
+    font-family: "Bandera Pro";
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.home-tests__desc {
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+.home-tests__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 100px);
+    grid-column-gap: 130px;
+    grid-row-gap: 35px;
+    justify-content: center;
+}

@@ -1,0 +1,50 @@
+.home-offers__title {
+    margin-bottom: 26px;
+    text-align: center;
+}
+
+.home-offers__title-link {
+    color: $theme-color-1;
+    font-family: $decor-font-family;
+    font-size: 24px;
+    text-align: center;
+    text-decoration: none;
+    &:hover {
+        color: $theme-color-1;
+        text-decoration: none;
+    }
+}
+
+.home-offers__prev-nav {
+    left: 5%;
+}
+
+.home-offers__next-nav {
+    right: 5%;
+}
+
+.home-offers__arrow {
+    width: 23px;
+    height: 32px;
+}
+
+.home-offers__arrow-top {
+    fill: #e6e6e6;
+    transition: fill 0.25s;
+}
+
+.home-offers__arrow-bottom {
+    fill: #fff;
+    transition: fill 0.25s;
+}
+
+.home-offers__arrow:hover .home-offers__arrow-top {
+    fill: #f08a00;
+    transition: fill 0.25s;
+}
+
+.home-offers__arrow:hover .home-offers__arrow-bottom {
+    fill: #fdc602;
+    transition: fill 0.25s;
+}
+

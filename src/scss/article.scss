@@ -1,0 +1,76 @@
+.article {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.5;
+    h2 {
+        margin: 50px 0 30px;
+        padding-left: 30px;
+        position: relative;
+        font-family: $decor-font-family;
+        font-size: 26px;
+        font-weight: 400;
+        line-height: 1.1;
+        &::before {
+            content: '';
+            width: 17px;
+            height: 25px;
+            background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg viewBox='0 0 29 42' xmlns='http://www.w3.org/2000/svg' style='transform: rotate(180deg); transform-origin: center'%3e%3cpath d='M28.644.21L.062 14.007v13.785l28.582-13.788V.21z' fill='%23e43516'%3e%3c/path%3e%3cpath d='M.062 14.012l28.582 13.8v13.783L.062 27.807V14.012z' fill='%23b9296e'%3e%3c/path%3e%3c/svg%3e");
+            background-size: 17px 25px;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 0.1em;
+            left: 0;
+        }
+    }
+    ul {
+        list-style-type: none;
+    }
+    li {
+        position: relative;
+        &::before {
+            content: '';
+            width: 10px;
+            height: 1px;
+            background-color: $theme-color-3;
+            position: absolute;
+            top: 0.8em;
+            left: -14px;
+        }
+    }
+    blockquote {
+        position: relative;
+        padding: 21px 55px 32px 50px;
+        font-family: $decor-font-family;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 1.4;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 18px;
+            left: 0;
+            width: 31px;
+            height: 19px;
+            background-image: url('../img/blockquote.svg');
+        }
+    }
+    td {
+        border: 1px solid #ddd;
+    }
+}
+
+.article__date {
+    margin-bottom: 20px;
+    color: $theme-color-3;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.article__text {
+    max-width: 645px;
+}
+
+.article__image {
+    margin-bottom: 45px;
+}

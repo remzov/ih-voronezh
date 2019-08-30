@@ -1,0 +1,40 @@
+.questions {
+    padding: 37px 44px 40px;
+}
+
+.questions__title {
+    margin-bottom: 42px;
+    color: $theme-color-1;
+    font-family: $decor-font-family;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1;
+    text-align: center;
+}
+
+.questions__submit {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.questions__textarea {
+    height: 250px;
+    resize: none;
+}
+
+.questions__close {
+    transform-origin: center;
+    transition: transform 0.25s;
+    &:hover {
+        
+        transform: rotate(-180deg);
+        transition: transform 0.25s;
+    }
+}
+
+.questions__errors {
+    color: $theme-color-1;
+    font-size: 24px;
+    text-align: center;
+}

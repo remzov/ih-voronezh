@@ -1,0 +1,145 @@
+.inner-page__content{
+	.details-page{
+		display: flex;
+		@media screen and (max-width: 600px){
+			flex-wrap: wrap;
+		}
+		.inner-page__aside{
+			@media screen and (max-width: 900px){
+				margin-bottom: 30px;
+			}
+		}
+	}
+	.inner-page__sections{
+		margin-left: 60px;
+		flex-basis: 62%;
+		@media screen and(max-width: 900px) {
+			flex-basis: 100%;
+			margin: 0;
+		}
+	}	
+	
+	.details-section{
+		display: flex;
+		@media screen and(max-width: 550px) {
+			flex-wrap: wrap;
+		}
+		&__aside{
+		    flex-basis: 40%;
+	    	text-align: center;
+	    	@media screen and(max-width: 550px) {
+				flex-basis: 100%;
+				margin-bottom: 30px;
+			}
+		}
+		&__content{
+		    flex-basis: 60%;
+		    @media screen and(max-width: 550px) {
+				flex-basis: 100%;
+			}
+		    .details-book{
+		    	&__default{
+		    		display: block;
+		    		color: #525252;
+		    		line-height: 1;
+		    		margin-bottom: 13px;
+		    		&:nth-last-child(1){
+		    			margin-bottom: 340px;
+		    		}
+		    	}
+		    	&__vendorcode{
+		    		margin-top: 30px;
+		    		margin-bottom: 15px;
+		    	}
+		    	&__availability{
+		    		color: #787878;
+		    		font-size: 15px;
+		    		margin-bottom: 25px;
+		    	}
+		    	.details__cost{
+		    		padding: 0;
+		    	}
+		    	&__btn{
+		    		margin-top: 20px;
+		    		text-transform: uppercase;
+		    		font-size: 15px;
+		    		font-family: "HelveticaNeueCyrMedium";
+		    		width: 176px;
+		    		height: 50px;
+		    	}
+		    	@at-root{
+		    		.btn{
+		    			padding: 17px;
+		    			width: 176px;
+		    			border: none;
+		    			background: transparent;
+		    		}
+		    		.btn-primary{
+		    			color: #fff;
+		    			background: #003d7a;
+		    		}
+		    	}
+		    }
+		}
+		&__advantages{
+			display: flex;
+			margin-top: 35px;
+			.buy-details__section{
+				margin-right: 40px;
+			}
+		}
+	}
+
+	.suggestions-section{
+		margin: 100px 0;
+		&__title{
+			font-family: "HelveticaNeueCyrMedium";
+			font-weight: 500;
+			color: #525252;
+			font-size: 24px;
+			margin-bottom: 30px;
+		}
+		&__content{
+			display: grid;
+			grid-template-columns: repeat(4,1fr);
+			grid-gap:15px;
+			@media screen and(max-width: 620px) {
+				grid-template-columns: repeat(3,1fr);
+			}
+			@media screen and(max-width: 535px) {
+				grid-template-columns: repeat(2,1fr);
+			}
+			@media screen and(max-width: 320px) {
+				grid-template-columns: 1fr;
+			}
+		}
+		&__book{
+			@media screen and(max-width: 600px) {
+				flex-basis: 45%;
+			}
+			@media screen and(max-width: 500px) {
+				flex-basis: 100%;
+			}
+			.book-card__content{
+				padding: 30px 20px 0;
+			}
+			.book-card__img{
+				width: 80px;
+				height: 120px;
+				margin-bottom: 25px;
+			}
+			.book-card__title{
+				font-family: "HelveticaNeueCyrMedium";
+				font-size: 14px;
+			}
+			.book-card__cost{
+				font-size: 16px;
+				padding: 0 20px 25px;
+			}
+			.book-card__cart{
+				font-size: 12px;
+				padding: 15px 0;
+			}
+		}
+	}
+}

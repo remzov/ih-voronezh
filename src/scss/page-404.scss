@@ -1,0 +1,78 @@
+.page-404 {
+    height: 100vh;
+}
+
+.page-404__main {
+    height: 75%;
+    background-color: $theme-color-1;
+}
+
+.page-404__content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-404__title {
+    color: #fff;
+    font-family: $decor-font-family;
+    font-size: 33vh;
+    line-height: 1;
+}
+
+.page-404__subtitle {
+    margin-bottom: 8vh;
+    color: #fff;
+    font-family: $decor-font-family;
+    font-size: 5.6vh;
+}
+
+.page-404__home {
+    color: $theme-color-2;
+    font-size: 2.7vh;
+    &:hover {
+        color: $theme-color-2;
+    }
+}
+
+.page-404__footer {
+    min-height: 25%;
+    box-sizing: border-box;
+    padding: 5vh 0;
+    background-color: $theme-color-2;
+    position: relative;
+    &::before {
+        content: '';
+        width: 100%;
+        height: 25px;
+        position: absolute;
+        top: -12px;
+        left: 0;
+        background: url('../img/bg.svg') 0 0 repeat-x;
+    }
+}
+
+@media screen and (max-width: $breakpoint-small) {
+    .page-404__footer {
+        padding: 0;
+    }
+}
+
+.page-404__footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page-404__domen {
+    margin-right: 5vw;
+    color: $theme-color-1;
+    font-size: 2.4vh;
+    font-weight: 400;
+    &:hover {
+        color: $theme-color-1;
+    }
+}
+
